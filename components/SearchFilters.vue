@@ -39,8 +39,8 @@
       </button>
     </div>
     <form v-show="isOpen">
-      <fieldset class="px-4 py-4 border-t border-gray-900">
-        <div class="flex -mx-2">
+      <div class="px-4 py-4 border-t border-gray-900 sm:flex sm:-mx-2">
+        <div class="flex sm:w-1/2 sm:mx-0">
           <label class="block w-1/2 px-2">
             <span class="text-sm font-semibold text-gray-500">Bedrooms</span>
             <select
@@ -58,8 +58,8 @@
             </select>
           </label>
         </div>
-        <div class="mt-4">
-          <label>
+        <div class="mt-4 sm:w-1/2 sm:mt-0 sm:px-2">
+          <label class="sm:px-2">
             <span class="text-sm font-semibold text-gray-500">Price Range</span>
             <select
               class="mt-1 form-select block w-full text-white shadow focus:bg-gray-600"
@@ -68,7 +68,7 @@
             </select>
           </label>
         </div>
-      </fieldset>
+      </div>
       <fieldset class="px-4 py-4 border-t border-gray-900">
         <span class="block text-sm font-semibold text-gray-500">
           Property Type
