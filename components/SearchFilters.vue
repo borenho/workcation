@@ -69,48 +69,50 @@
           </label>
         </div>
       </div>
-      <fieldset class="px-4 py-4 border-t border-gray-900">
+      <div class="px-4 py-4 border-t border-gray-900">
         <span class="block text-sm font-semibold text-gray-500">
           Property Type
         </span>
-        <label class="mt-3 flex items-center">
-          <input
-            type="radio"
-            class="form-radio h-5 w-5 text-indigo-500"
-            name="propertyType"
-            value="house"
-          />
-          <span class="ml-2 text-white">House</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="radio"
-            class="form-radio h-5 w-5 text-indigo-500"
-            name="propertyType"
-            value="apartment"
-          />
-          <span class="ml-2 text-white">Apartment</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="radio"
-            class="form-radio h-5 w-5 text-indigo-500"
-            name="propertyType"
-            value="loft"
-          />
-          <span class="ml-2 text-white">Loft</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="radio"
-            class="form-radio h-5 w-5 text-indigo-500"
-            name="propertyType"
-            value="townhouse"
-          />
-          <span class="ml-2 text-white">Townhouse</span>
-        </label>
-      </fieldset>
-      <fieldset class="px-4 py-4 border-t border-gray-900">
+        <div class="sm:flex sm:-mx-2">
+          <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+            <input
+              type="radio"
+              class="form-radio h-5 w-5 text-indigo-500"
+              name="propertyType"
+              value="house"
+            />
+            <span class="ml-2 text-white">House</span>
+          </label>
+          <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+            <input
+              type="radio"
+              class="form-radio h-5 w-5 text-indigo-500"
+              name="propertyType"
+              value="apartment"
+            />
+            <span class="ml-2 text-white">Apartment</span>
+          </label>
+          <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+            <input
+              type="radio"
+              class="form-radio h-5 w-5 text-indigo-500"
+              name="propertyType"
+              value="loft"
+            />
+            <span class="ml-2 text-white">Loft</span>
+          </label>
+          <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
+            <input
+              type="radio"
+              class="form-radio h-5 w-5 text-indigo-500"
+              name="propertyType"
+              value="townhouse"
+            />
+            <span class="ml-2 text-white">Townhouse</span>
+          </label>
+        </div>
+      </div>
+      <div class="px-4 py-4 border-t border-gray-900">
         <span>
           <legend class="block text-sm font-semibold text-gray-500">
             Amenities
@@ -172,7 +174,7 @@
           />
           <span class="ml-2 text-white">Parking</span>
         </label>
-      </fieldset>
+      </div>
       <div class="bg-gray-900 px-4 py-4">
         <button
           class="block w-full bg-indigo-500 hover:bg-indigo-400 font-semibold text-white px-4 py-2
