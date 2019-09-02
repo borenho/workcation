@@ -20,7 +20,11 @@
         />
       </div>
       <button
-        class="inline-flex bg-gray-700 hover:bg-gray-600 focus:outline-none focus:shadow-outline rounded-lg shadow pl-3 pr-4"
+        type="button"
+        class="inline-flex hover:bg-gray-600 focus:outline-none focus:shadow-outline
+        rounded-lg shadow pl-3 pr-4"
+        :class="{ 'bg-gray-600': isOpen, 'bg-gray-700': !isOpen }"
+        @click="toggle"
       >
         <svg
           class="h-6 w-6 fill-current text-gray-500"
@@ -34,7 +38,7 @@
         <span class="ml-1 text-white font-medium">Filters</span>
       </button>
     </div>
-    <form>
+    <form v-show="isOpen">
       <fieldset class="px-4 py-4 border-t border-gray-900">
         <div class="flex -mx-2">
           <label class="block w-1/2 px-2">
@@ -161,7 +165,11 @@
           <span class="ml-2 text-white">Kid Friendly</span>
         </label>
         <label class="mt-3 flex items-center">
-          <input type="radiobox" name="parking" />
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-indigo-500"
+            name="parking"
+          />
           <span class="ml-2 text-white">Parking</span>
         </label>
       </fieldset>
@@ -176,3 +184,19 @@
     </form>
   </section>
 </template>
+
+<script>
+export default {
+  props: [],
+  data() {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    toggle() {
+      this.isOpen = !this.isOpen
+    }
+  }
+}
+</script>
