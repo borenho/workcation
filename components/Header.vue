@@ -50,7 +50,10 @@
       </div>
     </div>
 
-    <nav class="sm:block" :class="{ block: isOpen, hidden: !isOpen }">
+    <nav
+      class="sm:flex sm:items-center"
+      :class="{ block: isOpen, hidden: !isOpen }"
+    >
       <div
         class="px-5 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0
         sm:py-0 sm:text-sm sm:px-2"
@@ -71,15 +74,17 @@
           Messages
         </a>
       </div>
-      <div class="px-5 py-5 sm:hidden">
+      <div class="px-5 py-5 sm:py-0">
         <div class="flex items-center">
           <img
-            class="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
+            class="h-10 w-10 object-cover rounded-full border-2 border-gray-600 sm:h-8 sm:w-8"
             src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
           />
-          <span class="ml-4 font-semibold text-gray-200">Isla Schoger</span>
+          <span class="ml-4 font-semibold text-gray-200 sm:hidden">
+            Isla Schoger
+          </span>
         </div>
-        <div class="mt-5">
+        <div class="mt-5 sm:hidden">
           <a href="#" class="block text-gray-400">Account settings</a>
           <a href="#" class="mt-3 block text-gray-400">Support</a>
           <a href="#" class="mt-3 block text-gray-400">Sign out</a>
