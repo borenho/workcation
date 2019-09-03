@@ -77,7 +77,7 @@
           <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
             <input
               type="radio"
-              class="form-radio h-5 w-5 text-indigo-500"
+              class="form-radio bg-gray-900 h-5 w-5 text-indigo-500"
               name="propertyType"
               value="house"
             />
@@ -86,7 +86,7 @@
           <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
             <input
               type="radio"
-              class="form-radio h-5 w-5 text-indigo-500"
+              class="form-radio bg-gray-900 h-5 w-5 text-indigo-500"
               name="propertyType"
               value="apartment"
             />
@@ -95,7 +95,7 @@
           <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
             <input
               type="radio"
-              class="form-radio h-5 w-5 text-indigo-500"
+              class="form-radio bg-gray-900 h-5 w-5 text-indigo-500"
               name="propertyType"
               value="loft"
             />
@@ -104,7 +104,7 @@
           <label class="mt-3 sm:w-1/4 sm:px-2 flex items-center">
             <input
               type="radio"
-              class="form-radio h-5 w-5 text-indigo-500"
+              class="form-radio bg-gray-900 h-5 w-5 text-indigo-500"
               name="propertyType"
               value="townhouse"
             />
@@ -118,62 +118,64 @@
             Amenities
           </legend>
         </span>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="balcony"
-          />
-          <span class="ml-2 text-white">Balcony</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="airConditioning"
-          />
-          <span class="ml-2 text-white">Air Conditioning</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="pool"
-          />
-          <span class="ml-2 text-white">Pool</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="beach"
-          />
-          <span class="ml-2 text-white">Beach</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="petFriendly"
-          />
-          <span class="ml-2 text-white">Pet Friendly</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="kidFriendly"
-          />
-          <span class="ml-2 text-white">Kid Friendly</span>
-        </label>
-        <label class="mt-3 flex items-center">
-          <input
-            type="checkbox"
-            class="form-checkbox h-5 w-5 text-indigo-500"
-            name="parking"
-          />
-          <span class="ml-2 text-white">Parking</span>
-        </label>
+        <div class="sm:flex sm:-mx-2 sm:flex-wrap">
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox bg-gray-900 h-5 w-5 text-indigo-500"
+              name="balcony"
+            />
+            <span class="ml-2 text-white">Balcony</span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox bg-gray-900 h-5 w-5 text-indigo-500"
+              name="pool"
+            />
+            <span class="ml-2 text-white">Pool</span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox bg-gray-900 h-5 w-5 text-indigo-500"
+              name="beach"
+            />
+            <span class="ml-2 text-white">Beach</span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox bg-gray-900 h-5 w-5 text-indigo-500"
+              name="petFriendly"
+            />
+            <span class="ml-2 text-white">Pet Friendly</span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox bg-gray-900 h-5 w-5 text-indigo-500"
+              name="kidFriendly"
+            />
+            <span class="ml-2 text-white">Kid Friendly</span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/4 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox bg-gray-900 h-5 w-5 text-indigo-500"
+              name="parking"
+            />
+            <span class="ml-2 text-white">Parking</span>
+          </label>
+          <label class="mt-3 flex items-center sm:w-1/2 sm:px-2">
+            <input
+              type="checkbox"
+              class="form-checkbox  bg-gray-900 h-5 w-5 text-indigo-500"
+              name="airConditioning"
+            />
+            <span class="ml-2 text-white">Air Conditioning</span>
+          </label>
+        </div>
       </div>
       <div class="bg-gray-900 px-4 py-4">
         <button
