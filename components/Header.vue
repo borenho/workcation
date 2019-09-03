@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-900">
+  <header class="bg-gray-900 sm:flex sm:items-center sm:justify-between">
     <div class="flex justify-between px-4 py-3">
       <div>
         <svg
@@ -27,7 +27,7 @@
       <div class="flex">
         <button
           type="button"
-          class="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white"
+          class="px-2 text-gray-500 hover:text-white focus:outline-none focus:text-white sm:hidden"
           @click="toggle"
         >
           <svg
@@ -50,15 +50,28 @@
       </div>
     </div>
 
-    <nav v-show="isOpen">
-      <div class="px-5 pt-2 pb-5 border-b border-gray-800">
-        <a href="#" class="block font-semibold text-white">
+    <nav class="sm:block" :class="{ block: isOpen, hidden: !isOpen }">
+      <div
+        class="px-5 pt-2 pb-5 border-b border-gray-800 sm:flex sm:border-b-0
+        sm:py-0 sm:text-sm sm:px-2"
+      >
+        <a href="#" class="block px-3 py-1 font-semibold text-white">
           List your property
         </a>
-        <a href="#" class="mt-2 block font-semibold text-white">Trips</a>
-        <a href="#" class="mt-2 block font-semibold text-white">Messages</a>
+        <a
+          href="#"
+          class="mt-2 sm:mt-0 block px-3 py-1 font-semibold text-white"
+        >
+          Trips
+        </a>
+        <a
+          href="#"
+          class="mt-2 sm:mt-0 block px-3 py-1 font-semibold text-white"
+        >
+          Messages
+        </a>
       </div>
-      <div class="px-5 py-5">
+      <div class="px-5 py-5 sm:hidden">
         <div class="flex items-center">
           <img
             class="h-10 w-10 object-cover rounded-full border-2 border-gray-600"
