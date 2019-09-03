@@ -2,14 +2,21 @@
   <div class="min-h-screen bg-gray-200 antialiased">
     <Header />
     <SearchFilters />
-    <main class="px-4 py-6">
-      <h3 class="text-gray-900 text-x1">Los Angeles</h3>
-      <p class="text-gray-600">
-        Live like the stars in these luxurious Southern California estate
-      </p>
-      <div class="mt-5">
-        <!-- eslint-disable-next-line vue/require-v-for-key, vue/no-unused-vars -->
-        <div v-for="i in 4">
+    <main class="py-6">
+      <div class="px-4">
+        <h3 class="text-gray-900 text-x1">Los Angeles</h3>
+        <p class="text-gray-600">
+          Live like the stars in these luxurious Southern California estate
+        </p>
+      </div>
+      <div class="px-4 mt-5 sm:flex sm:-mx-2 sm:overflow-x-auto sm:pb-8">
+        <!-- eslint-disable vue/require-v-for-key, vue/no-unused-vars -->
+        <div
+          v-for="i in 4"
+          :class="{ 'mt-10': i > 1 }"
+          class="sm:mt-0 sm:max-w-xs sm:w-full sm:flex-shrink-0 sm:px-2"
+        >
+          <!-- eslint-enable vue/require-v-for-key, vue/no-unused-vars -->
           <div class="relative pb-5/6">
             <img
               class="absolute inset-0 rounded-lg shadow-md h-full object-cover"
